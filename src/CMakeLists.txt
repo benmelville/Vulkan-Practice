@@ -7,6 +7,12 @@ project(vulkan_test)
 
 add_executable(tester main.cpp)
 
+add_library(lve-window 
+    lve_window.cpp
+    first_app.cpp
+)
+target_link_libraries(tester lve-window)
+
 find_package(Vulkan REQUIRED FATAL_ERROR)
 include_directories(${Vulkan_INCLUDE_DIRS})
 target_link_libraries(tester ${Vulkan_LIBRARIES})

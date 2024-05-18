@@ -62,4 +62,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/tester.dir/DependInfo.cmake"
+  "CMakeFiles/lve-window.dir/DependInfo.cmake"
   )

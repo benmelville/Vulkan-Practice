@@ -129,6 +129,67 @@ tester/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tester.dir/build.make CMakeFiles/tester.dir/build
 .PHONY : tester/fast
 
+#=============================================================================
+# Target rules for targets named lve-window
+
+# Build rule for target.
+lve-window: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lve-window
+.PHONY : lve-window
+
+# fast build rule for target.
+lve-window/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lve-window.dir/build.make CMakeFiles/lve-window.dir/build
+.PHONY : lve-window/fast
+
+first_app.o: first_app.cpp.o
+.PHONY : first_app.o
+
+# target to build an object file
+first_app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lve-window.dir/build.make CMakeFiles/lve-window.dir/first_app.cpp.o
+.PHONY : first_app.cpp.o
+
+first_app.i: first_app.cpp.i
+.PHONY : first_app.i
+
+# target to preprocess a source file
+first_app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lve-window.dir/build.make CMakeFiles/lve-window.dir/first_app.cpp.i
+.PHONY : first_app.cpp.i
+
+first_app.s: first_app.cpp.s
+.PHONY : first_app.s
+
+# target to generate assembly for a file
+first_app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lve-window.dir/build.make CMakeFiles/lve-window.dir/first_app.cpp.s
+.PHONY : first_app.cpp.s
+
+lve_window.o: lve_window.cpp.o
+.PHONY : lve_window.o
+
+# target to build an object file
+lve_window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lve-window.dir/build.make CMakeFiles/lve-window.dir/lve_window.cpp.o
+.PHONY : lve_window.cpp.o
+
+lve_window.i: lve_window.cpp.i
+.PHONY : lve_window.i
+
+# target to preprocess a source file
+lve_window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lve-window.dir/build.make CMakeFiles/lve-window.dir/lve_window.cpp.i
+.PHONY : lve_window.cpp.i
+
+lve_window.s: lve_window.cpp.s
+.PHONY : lve_window.s
+
+# target to generate assembly for a file
+lve_window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lve-window.dir/build.make CMakeFiles/lve-window.dir/lve_window.cpp.s
+.PHONY : lve_window.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -161,7 +222,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... lve-window"
 	@echo "... tester"
+	@echo "... first_app.o"
+	@echo "... first_app.i"
+	@echo "... first_app.s"
+	@echo "... lve_window.o"
+	@echo "... lve_window.i"
+	@echo "... lve_window.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

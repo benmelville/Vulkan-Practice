@@ -92,6 +92,7 @@ tester_EXTERNAL_OBJECTS =
 
 tester: CMakeFiles/tester.dir/main.cpp.o
 tester: CMakeFiles/tester.dir/build.make
+tester: liblve-window.a
 tester: /usr/local/lib/libvulkan.dylib
 tester: /usr/local/lib/libglfw.3.4.dylib
 tester: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd

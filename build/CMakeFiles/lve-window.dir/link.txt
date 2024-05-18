@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc liblve-window.a "CMakeFiles/lve-window.dir/lve_window.cpp.o" "CMakeFiles/lve-window.dir/first_app.cpp.o"
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib liblve-window.a
