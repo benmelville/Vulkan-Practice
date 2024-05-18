@@ -13,6 +13,11 @@ add_library(lve-window
 )
 target_link_libraries(tester lve-window)
 
+add_library(lve-pipeline
+    lve_pipeline.cpp
+)
+target_link_libraries(tester lve-pipeline)
+
 find_package(Vulkan REQUIRED FATAL_ERROR)
 include_directories(${Vulkan_INCLUDE_DIRS})
 target_link_libraries(tester ${Vulkan_LIBRARIES})

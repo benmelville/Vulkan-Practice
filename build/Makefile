@@ -142,6 +142,19 @@ lve-window/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lve-window.dir/build.make CMakeFiles/lve-window.dir/build
 .PHONY : lve-window/fast
 
+#=============================================================================
+# Target rules for targets named lve-pipeline
+
+# Build rule for target.
+lve-pipeline: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lve-pipeline
+.PHONY : lve-pipeline
+
+# fast build rule for target.
+lve-pipeline/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lve-pipeline.dir/build.make CMakeFiles/lve-pipeline.dir/build
+.PHONY : lve-pipeline/fast
+
 first_app.o: first_app.cpp.o
 .PHONY : first_app.o
 
@@ -165,6 +178,30 @@ first_app.s: first_app.cpp.s
 first_app.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lve-window.dir/build.make CMakeFiles/lve-window.dir/first_app.cpp.s
 .PHONY : first_app.cpp.s
+
+lve_pipeline.o: lve_pipeline.cpp.o
+.PHONY : lve_pipeline.o
+
+# target to build an object file
+lve_pipeline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lve-pipeline.dir/build.make CMakeFiles/lve-pipeline.dir/lve_pipeline.cpp.o
+.PHONY : lve_pipeline.cpp.o
+
+lve_pipeline.i: lve_pipeline.cpp.i
+.PHONY : lve_pipeline.i
+
+# target to preprocess a source file
+lve_pipeline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lve-pipeline.dir/build.make CMakeFiles/lve-pipeline.dir/lve_pipeline.cpp.i
+.PHONY : lve_pipeline.cpp.i
+
+lve_pipeline.s: lve_pipeline.cpp.s
+.PHONY : lve_pipeline.s
+
+# target to generate assembly for a file
+lve_pipeline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lve-pipeline.dir/build.make CMakeFiles/lve-pipeline.dir/lve_pipeline.cpp.s
+.PHONY : lve_pipeline.cpp.s
 
 lve_window.o: lve_window.cpp.o
 .PHONY : lve_window.o
@@ -222,11 +259,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... lve-pipeline"
 	@echo "... lve-window"
 	@echo "... tester"
 	@echo "... first_app.o"
 	@echo "... first_app.i"
 	@echo "... first_app.s"
+	@echo "... lve_pipeline.o"
+	@echo "... lve_pipeline.i"
+	@echo "... lve_pipeline.s"
 	@echo "... lve_window.o"
 	@echo "... lve_window.i"
 	@echo "... lve_window.s"

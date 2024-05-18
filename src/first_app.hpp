@@ -2,6 +2,7 @@
 #define FIRST_APP
 
 #include "lve_window.hpp"
+#include "lve_pipeline.hpp"
 
 namespace lve
 {
@@ -15,6 +16,7 @@ namespace lve
 
     private:
         LveWindow lveWindow{WIDTH, HEIGHT, "Hello Vulkan and Ben!"};
+        LvePipeline lvePipeline{"src/shaders/simple_shader.vert.spv", "src/shaders/simple_shader.frag.spv"};
     };
 } // namespace lve
 
